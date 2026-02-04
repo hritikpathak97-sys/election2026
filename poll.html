@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote - Election 2026 Poll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗳️ Cast Your Vote</h1>
+            <p id="user-email"></p>
+        </header>
+
+        <main>
+            <form id="pollForm" class="poll-form">
+                <div class="question">
+                    <h3>1. Balen vs KP Oli - Who is going to win?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="winner" value="Balen" required> Balen</label>
+                        <label><input type="radio" name="winner" value="KP Oli" required> KP Oli</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>2. Who is going to win the most seats?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="seats" value="Congress" required> Congress</label>
+                        <label><input type="radio" name="seats" value="UML" required> UML</label>
+                        <label><input type="radio" name="seats" value="Shram Sanskriti" required> Shram Sanskriti</label>
+                        <label><input type="radio" name="seats" value="RSP" required> RSP</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>3. Renu Dahal vs Sobita Gautam - Who will win?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="renu_sobita" value="Renu Dahal" required> Renu Dahal</label>
+                        <label><input type="radio" name="renu_sobita" value="Sobita Gautam" required> Sobita Gautam</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>4. Gagan Kumar Thapa vs Amresh Kumar Singh - Who will win?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="gagan_amresh" value="Gagan Kumar Thapa" required> Gagan Kumar Thapa</label>
+                        <label><input type="radio" name="gagan_amresh" value="Amresh Kumar Singh" required> Amresh Kumar Singh</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>5. Mahesh Basnet vs Rajib Khatri - Who will win?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="mahesh_rajib" value="Mahesh Basnet" required> Mahesh Basnet</label>
+                        <label><input type="radio" name="mahesh_rajib" value="Rajib Khatri" required> Rajib Khatri</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>6. Who is going to be the next Prime Minister?</h3>
+                    <div class="options">
+                        <label><input type="radio" name="pm" value="Balen" required> Balen</label>
+                        <label><input type="radio" name="pm" value="KP Oli" required> KP Oli</label>
+                        <label><input type="radio" name="pm" value="Gagan" required> Gagan</label>
+                        <label><input type="radio" name="pm" value="Ravi" required> Ravi</label>
+                        <label><input type="radio" name="pm" value="Harka" required> Harka</label>
+                        <label><input type="radio" name="pm" value="Prachanda" required> Prachanda</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <h3>7. Predict Seat Distribution (Total: 275 seats)</h3>
+                    <div class="seat-prediction">
+                        <div class="seat-info">
+                            <p><strong>Direct Election (FPTP):</strong> Max 165 seats</p>
+                            <p><strong>Proportional Representation (PR):</strong> Max 110 seats</p>
+                        </div>
+                        
+                        <div class="parties-grid">
+                            <div class="party-row">
+                                <label>RSP:</label>
+                                <input type="number" name="rsp_direct" min="0" max="165" value="0" class="seat-input direct">
+                                <span>Direct</span>
+                                <input type="number" name="rsp_pr" min="0" max="110" value="0" class="seat-input pr">
+                                <span>PR</span>
+                            </div>
+                            
+                            <div class="party-row">
+                                <label>Congress:</label>
+                                <input type="number" name="congress_direct" min="0" max="165" value="0" class="seat-input direct">
+                                <span>Direct</span>
+                                <input type="number" name="congress_pr" min="0" max="110" value="0" class="seat-input pr">
+                                <span>PR</span>
+                            </div>
+                            
+                            <div class="party-row">
+                                <label>UML:</label>
+                                <input type="number" name="uml_direct" min="0" max="165" value="0" class="seat-input direct">
+                                <span>Direct</span>
+                                <input type="number" name="uml_pr" min="0" max="110" value="0" class="seat-input pr">
+                                <span>PR</span>
+                            </div>
+                            
+                            <div class="party-row">
+                                <label>Shram Sanskriti:</label>
+                                <input type="number" name="shram_direct" min="0" max="165" value="0" class="seat-input direct">
+                                <span>Direct</span>
+                                <input type="number" name="shram_pr" min="0" max="110" value="0" class="seat-input pr">
+                                <span>PR</span>
+                            </div>
+                            
+                            <div class="party-row">
+                                <label>Ujyalo Nepal:</label>
+                                <input type="number" name="ujyalo_direct" min="0" max="165" value="0" class="seat-input direct">
+                                <span>Direct</span>
+                                <input type="number" name="ujyalo_pr" min="0" max="110" value="0" class="seat-input pr">
+                                <span>PR</span>
+                            </div>
+                            
+                            <div class="party-row">
+                                <label>Others:</label>
+                                <input type="number" name="others_direct" min="0" max="165" value="0" class="seat-input direct">
+                                <span>Direct</span>
+                                <input type="number" name="others_pr" min="0" max="110" value="0" class="seat-input pr">
+                                <span>PR</span>
+                            </div>
+                        </div>
+                        
+                        <div class="seat-totals">
+                            <div class="total-row">
+                                <span>Total Direct: <strong id="total-direct">0</strong>/165</span>
+                                <span>Total PR: <strong id="total-pr">0</strong>/110</span>
+                                <span>Grand Total: <strong id="grand-total">0</strong>/275</span>
+                            </div>
+                            <div id="seat-error" class="seat-error hidden"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit">Submit Vote</button>
+                <div id="success-message" class="success hidden"></div>
+            </form>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

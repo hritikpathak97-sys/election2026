@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results - Election 2026 Poll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎉 Vote Submitted!</h1>
+            <p id="user-email"></p>
+        </header>
+
+        <main>
+            <div class="results-container">
+                <div class="question">
+                    <h3>Your Predictions:</h3>
+                    <div class="vote-summary" id="user-votes">
+                        <!-- User votes will be displayed here -->
+                    </div>
+                </div>
+
+                <div class="question ghanti-message">
+                    <h3>🔔 Reality Check:</h3>
+                    <div class="ghanti-content">
+                        <p>Whatever you voted for...</p>
+                        <p class="big-text">The winner will be <strong>"Ghanti"</strong> 🔔</p>
+                        <p class="small-text">Because that's how politics works! 😄</p>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button onclick="window.location.href='index.html'">Vote with Different Email</button>
+                    <button onclick="shareResults()">Share Results</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

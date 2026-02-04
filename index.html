@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election 2026 Poll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗳️ Election 2026 Poll</h1>
+            <p>Share your predictions for the upcoming election</p>
+        </header>
+
+        <main>
+            <form id="emailForm" class="email-form">
+                <div class="form-group">
+                    <label for="email">Enter your email to participate:</label>
+                    <input type="email" id="email" required placeholder="your@email.com">
+                </div>
+                <button type="submit">Continue to Poll</button>
+                <div id="error-message" class="error hidden"></div>
+            </form>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
